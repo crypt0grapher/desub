@@ -1,3 +1,5 @@
+#![feature(const_trait_impl)]
+#![feature(const_mut_refs)]
 // Copyright 2021 Parity Technologies (UK) Ltd.
 // This file is part of substrate-desub.
 //
@@ -13,6 +15,7 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with substrate-desub.  If not, see <http://www.gnu.org/licenses/>.
+
 
 mod app;
 mod queries;
@@ -31,7 +34,6 @@ async fn main() -> Result<(), Error> {
 	// Configure logger at runtime
 	fern::Dispatch::new()
 		.level(log::LevelFilter::Error)
-		.level_for("desub_legacy", level)
 		.level_for("desub_current", level)
 		.level_for("desub_json_resolver", level)
 		.level_for("tx_decoder", level)

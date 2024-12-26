@@ -14,7 +14,7 @@
 // along with substrate-desub.  If not, see <http://www.gnu.org/licenses/>.
 
 use crate::{Error, SubstrateType};
-use primitives::crypto::Ss58Codec;
+use sp_core::crypto::Ss58Codec;
 use serde::{
 	ser::{self, SerializeSeq},
 	Serializer,

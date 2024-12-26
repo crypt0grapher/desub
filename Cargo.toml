@@ -1,4 +1,5 @@
 [workspace]
+resolver = "2"
 members = [
 	"bin/tx-decoder",
 	"bin/v14-test",
@@ -9,3 +10,6 @@ members = [
 	"desub-common",
 	"integration-tests",
 ]
+
+[patch.crates-io]
+slab = { git = "https://github.com/crypt0grapher/slab", branch = "master" }

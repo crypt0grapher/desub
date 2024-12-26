@@ -7,9 +7,9 @@ edition = "2021"
 
 [dependencies]
 desub = { path = "../../desub", features = [ "polkadot-js" ] }
-async-std = { version = "1.10.0", features = [ "attributes" ] }
+async-std = { version = "1.13.0", features = [ "attributes" ] }
 async-stream = "0.3.2"
-sqlx = { version = "0.5", features = [ "runtime-async-std-rustls", "postgres", "offline" ]}
+sqlx = { version = "0.8", features = [ "runtime-async-std-rustls", "postgres" ]}
 anyhow = "1.0.43"
 futures = "0.3.17"
 serde = { version = "1.0", features = ["derive"] }

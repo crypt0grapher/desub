@@ -12,10 +12,10 @@ desub-legacy = { path = "../desub-legacy" }
 desub-json-resolver = { path = "../desub-json-resolver" }
 serde = { version = "1.0", features = ["derive"] }
 serde_json = { version = "1.0", features = ["preserve_order"] }
-codec = { version = "2", package = "parity-scale-codec" }
-primitives = { package = "sp-core",  git = "https://github.com/paritytech/substrate", branch = "master" }
-frame-system = { git = "https://github.com/paritytech/substrate", branch = "master" }
-pallet-balances = { git = "https://github.com/paritytech/substrate", branch = "master" }
+codec = { version = "3.6.12", package = "parity-scale-codec" }
+sp-core = { git = "https://github.com/paritytech/polkadot-sdk.git", tag = "polkadot-stable2409" }
+frame-system = { git = "https://github.com/paritytech/polkadot-sdk.git", tag = "polkadot-stable2409" }
+pallet-balances = { git = "https://github.com/paritytech/polkadot-sdk.git", tag = "polkadot-stable2409" }
 pretty_env_logger = "0.4"
 log = "0.4"
 hex = "0.4"
